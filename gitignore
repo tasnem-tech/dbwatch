@@ -1,0 +1,13 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+.venv/
+venv/
+.dbwatch.json
+.dbwatch_snapshots/
+*.json
+!pyproject.toml
+.mypy_cache/
+.pytest_cache/

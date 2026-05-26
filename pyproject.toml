@@ -1,0 +1,40 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "dbwatch"
+version = "0.1.0"
+description = "CLI tool to monitor SQL databases for schema and data changes"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+keywords = ["database", "sql", "schema", "monitoring", "cli", "devops"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Environment :: Console",
+    "Programming Language :: Python :: 3",
+    "Topic :: Database",
+]
+dependencies = [
+    "sqlalchemy>=2.0",
+    "typer>=0.12",
+    "rich>=13",
+]
+
+[project.optional-dependencies]
+postgres = ["psycopg2-binary"]
+mysql    = ["pymysql"]
+dev      = ["pytest", "pytest-mock", "hatch"]
+
+[project.scripts]
+dbwatch = "dbwatch.cli:app"
+
+[tool.hatch.envs.default]
+features = ["dev"]
+
+[tool.hatch.envs.default.scripts]
+test = "pytest tests/ -v"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
