@@ -1,0 +1,165 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DBWatch | Database Monitoring Tool</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #0f172a, #020617);
+      color: #e5e7eb;
+      line-height: 1.6;
+    }
+    header {
+      padding: 70px 20px;
+      text-align: center;
+    }
+    h1 {
+      font-size: 54px;
+      margin-bottom: 10px;
+    }
+    .highlight {
+      color: #38bdf8;
+    }
+    p {
+      max-width: 800px;
+      margin: 15px auto;
+      color: #cbd5e1;
+      font-size: 18px;
+    }
+    .btn {
+      display: inline-block;
+      margin: 20px 10px;
+      padding: 14px 22px;
+      background: #38bdf8;
+      color: #020617;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    section {
+      max-width: 1100px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: #111827;
+      padding: 25px;
+      border-radius: 14px;
+      border: 1px solid #1f2937;
+    }
+    .card h3 {
+      color: #38bdf8;
+    }
+    pre {
+      background: #020617;
+      padding: 22px;
+      border-radius: 12px;
+      overflow-x: auto;
+      border: 1px solid #1f2937;
+    }
+    footer {
+      text-align: center;
+      padding: 30px;
+      color: #94a3b8;
+      border-top: 1px solid #1f2937;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>🛡️ DBWatch</h1>
+    <h2>Database Monitoring & <span class="highlight">Change Tracking System</span></h2>
+    <p>
+      DBWatch is a Python-based CLI tool that monitors SQL databases,
+      detects schema and data changes, compares snapshots, and generates audit reports.
+    </p>
+    <a class="btn" href="https://github.com/tasnem-tech/dbwatch" target="_blank">View GitHub Code</a>
+    <a class="btn" href="#demo">See Demo</a>
+  </header>
+
+  <section>
+    <h2>Key Features</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>📊 Database Monitoring</h3>
+        <p>Monitor SQL database tables and track record changes over time.</p>
+      </div>
+      <div class="card">
+        <h3>📸 Snapshot Tracking</h3>
+        <p>Create database snapshots for future comparison and auditing.</p>
+      </div>
+      <div class="card">
+        <h3>🔍 Change Detection</h3>
+        <p>Detect inserted, updated, and deleted records between snapshots.</p>
+      </div>
+      <div class="card">
+        <h3>📄 Reporting</h3>
+        <p>Generate structured reports summarising detected database changes.</p>
+      </div>
+      <div class="card">
+        <h3>⏰ Scheduled Checks</h3>
+        <p>Run automated monitoring jobs using scheduling support.</p>
+      </div>
+      <div class="card">
+        <h3>💻 CLI Workflow</h3>
+        <p>Use simple terminal commands to run snapshots, comparisons, and reports.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="demo">
+    <h2>Demo Commands</h2>
+    <pre>
+# Create a database snapshot
+python cli.py snapshot
+
+# Compare two snapshots
+python cli.py compare
+
+# Generate a report
+python cli.py report
+
+# Start scheduled monitoring
+python cli.py monitor
+    </pre>
+  </section>
+
+  <section>
+    <h2>Tech Stack</h2>
+    <div class="grid">
+      <div class="card"><h3>Python</h3><p>Core application development</p></div>
+      <div class="card"><h3>SQLAlchemy</h3><p>Database connection and query handling</p></div>
+      <div class="card"><h3>Rich CLI</h3><p>Professional command-line interface</p></div>
+      <div class="card"><h3>Pandas</h3><p>Data processing and reporting</p></div>
+      <div class="card"><h3>Schedule</h3><p>Automated monitoring tasks</p></div>
+      <div class="card"><h3>SQLite / SQL</h3><p>Database support and testing</p></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Why This Project Matters</h2>
+    <p>
+      DBWatch demonstrates practical software engineering skills in Python,
+      database management, automation, data auditing, CLI design, and report generation.
+      It is useful for data quality monitoring, ETL validation, compliance reporting,
+      migration testing, and database backup verification.
+    </p>
+  </section>
+
+  <footer>
+    Developed by Tasnem Islam Prome · Python · SQL · Automation · Data Engineering
+  </footer>
+
+</body>
+</html>
+```
